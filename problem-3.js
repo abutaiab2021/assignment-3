@@ -1,6 +1,6 @@
 
 function finalScore(omr){
-    if(typeof omr !== 'object' || omr === null || Array.isArray(omr)){
+    if(typeof omr !== 'object' || omr === null || Array.isArray(omr) === true){
         return 'Invalid';
     }
     
@@ -18,10 +18,10 @@ function finalScore(omr){
 }
 
 
-// const bcsMarks = finalScore(["Raj"]);//Invalid
+const bcsMarks = finalScore(["Raj"]);//Invalid
 // const bcsMarks = finalScore("!@#");//Invalid
 // const bcsMarks = finalScore({ right: 30, wrong: 30, skip: 40 });//15
 // const bcsMarks = finalScore({ right: 50, wrong: 10, skip: 40 });//45
 // const bcsMarks = finalScore({ right: 80, wrong: 25, skip: 0 });//Invalid
-const bcsMarks = finalScore({ right: 67, wrong: 23, skip: 10 });//56
+// const bcsMarks = finalScore({ right: 67, wrong: 23, skip: 10 });//56
 console.log('BCS Total Marks is : ',bcsMarks);

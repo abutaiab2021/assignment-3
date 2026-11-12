@@ -1,6 +1,6 @@
 function analyzeText(str){
     if(typeof str !== 'string' || str === ""){
-        return 'Invaid';
+        return 'Invalid';
     }
     const convertStrToArray = str.split(' ');
     const token = str.replaceAll(" ","").length;
